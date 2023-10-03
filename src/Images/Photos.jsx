@@ -8,7 +8,9 @@ const Photos = {
   rain: require('./rain.png'),
   snow: require('./snow.png'),
   night: require('./night.png'),
-  haze: require('./haze.png')
+  haze: require('./haze.png'),
+  smoke: require('./smoke.png'),
+  thunderstorm: require('./thunderstorm.png'),
 };
 
 export default Photos;

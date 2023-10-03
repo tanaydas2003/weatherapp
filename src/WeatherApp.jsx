@@ -40,6 +40,12 @@ const WeatherApp = () => {
                 else if(res.data.weather[0].main === "Haze"){
                     imagePath = `${Photos.haze}`
                 }
+                else if(res.data.weather[0].main === "Smoke"){
+                    imagePath = `${Photos.smoke}`
+                }
+                else if(res.data.weather[0].main === "Thunderstorm"){
+                    imagePath = `${Photos.thunderstorm}`
+                }
                 setData({...data, celcius: res.data.main.temp, name:res.data.name, humidity: res.data.main.humidity, speed:res.data.wind.speed,image:imagePath})
                 setError('');         
             })
